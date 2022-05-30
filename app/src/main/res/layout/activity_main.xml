@@ -18,6 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_medium"
         android:text="Myrestaurants"
         android:textColor="@color/deep_orange"
         android:textSize="40sp"

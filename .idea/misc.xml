@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_restaurants.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_my_restaurants_array_adapter.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_restaurants.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_restaurants_activity1_instrumentation_test.xml" value="0.19375" />
       </map>
     </option>
   </component>
