@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/activity_my_restaurants_array_adapter.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_restaurants.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_restaurants_activity1_instrumentation_test.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/restaurant_list_item.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moringaschool.myrestaurants">
 
-    //intenet
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -20,7 +19,7 @@
                 android:value="com.moringaschool.myrestaurants.MainActivity">
             </meta-data>
         </activity>
-            android:exported="false" />
+        android:exported="false" />
         android:name=".RestaurantsActivity">
         android:name=".MainActivity"
         android:theme="@style/NoActionBarTheme">

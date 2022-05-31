@@ -13,6 +13,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //yelp api key
+        buildTypes.each {
+            it.buildConfigField 'String', 'YELP_API_KEY', YelpApiKey
+        }
     }
 
     buildTypes {
@@ -42,4 +46,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
+    //generated
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+
+    //recyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
