@@ -2,12 +2,19 @@
 package com.moringaschool.myrestaurants.models;
 
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import org.parceler.Parcel;
 
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
+
+
+@Parcel
 public class Location {
 
     @SerializedName("city")
@@ -49,6 +56,14 @@ public class Location {
      * @param address1
      * @param state
      */
+
+    @NonNull
+    @Override
+    public String toString() {
+        return String.format("%s, %s, %s %s", this.address1, this.city, this.state, this.zipCode);
+    }
+
+
     public Location(String city, String country, String address2, String address3, String state, String address1, String zipCode) {
         super();
         this.city = city;

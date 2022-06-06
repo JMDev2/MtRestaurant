@@ -1,7 +1,7 @@
 package com.moringaschool.myrestaurants.network;
 
-import static com.moringaschool.myrestaurants.Constants.YELP_API_KEY;
-import static com.moringaschool.myrestaurants.Constants.YELP_BASE_URL;
+import static com.moringaschool.myrestaurants.models.Constants.YELP_API_KEY;
+import static com.moringaschool.myrestaurants.models.Constants.YELP_BASE_URL;
 
 import java.io.IOException;
 

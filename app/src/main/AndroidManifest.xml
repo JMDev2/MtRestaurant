@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moringaschool.myrestaurants">
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,19 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRestaurants">
         <activity
-            android:name=".RestaurantsActivity">
+            android:name=".RestaurantDetailActivity"
+            android:exported="false" />
+        <activity android:name=".RestaurantListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringaschool.myrestaurants.MainActivity">
+
             </meta-data>
         </activity>
-        android:exported="false" />
-        android:name=".RestaurantsActivity">
-        android:name=".MainActivity"
-        android:theme="@style/NoActionBarTheme">
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.moringaschool.myrestaurants.MainActivity">
+
         </meta-data>
 
         <activity
@@ -36,7 +36,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

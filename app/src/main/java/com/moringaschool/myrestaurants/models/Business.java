@@ -6,9 +6,13 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
+
+@Parcel
 public class Business {
 
     @SerializedName("rating")

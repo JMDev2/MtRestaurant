@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.models;
 
 import com.moringaschool.myrestaurants.BuildConfig;
 
