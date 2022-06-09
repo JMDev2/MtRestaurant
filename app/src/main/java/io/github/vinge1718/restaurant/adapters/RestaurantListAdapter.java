@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.moringaschool.myrestaurants.R;
-import com.moringaschool.myrestaurants.RestaurantDetailActivity;
+import com.moringaschool.myrestaurants.ui.RestaurantDetailActivity;
 import com.moringaschool.myrestaurants.models.Business;
 import com.squareup.picasso.Picasso;
 

@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.moringaschool.myrestaurants.R;
 import com.moringaschool.myrestaurants.adapters.RestaurantPagerAdapter;
 import com.moringaschool.myrestaurants.models.Business;
 

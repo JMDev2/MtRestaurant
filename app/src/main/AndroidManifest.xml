@@ -12,30 +12,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRestaurants">
         <activity
-            android:name=".RestaurantDetailActivity"
-            android:exported="false" />
-        <activity android:name=".RestaurantListActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.moringaschool.myrestaurants.MainActivity">
-
-            </meta-data>
-        </activity>
-
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.moringaschool.myrestaurants.MainActivity">
-
-        </meta-data>
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RestaurantDetailActivity"
+            android:exported="false" />
+        <activity android:name=".ui.RestaurantListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.myrestaurants.ui.MainActivity">
+
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".ui.SavedRestaurantListActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.moringaschool.myrestaurants.ui.MainActivity">
+
+        </meta-data>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false">
+
         </activity>
     </application>
 

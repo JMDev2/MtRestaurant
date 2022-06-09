@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.ui;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,9 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.moringaschool.myrestaurants.Constants;
 import com.moringaschool.myrestaurants.R;
 import com.moringaschool.myrestaurants.models.Business;
 import com.moringaschool.myrestaurants.models.Category;
@@ -85,6 +89,10 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
         mPhoneLabel.setOnClickListener(this);
         mAddressLabel.setOnClickListener(this);
 
+
+        //saving to FIREBASE
+        mSaveRestaurantButton.setOnClickListener(this);
+
         return view;
     }
     @Override
@@ -102,6 +110,16 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
                     + "," + mRestaurant.getCoordinates().getLongitude()
                     + "?q=(" + mRestaurant.getName() + ")"));
             startActivity(mapIntent);
+        }
+
+        //saving to FIREBASE
+        if(v == mSaveRestaurantButton){
+            DatabaseReference restaurantRef = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Constants.FIREBASE_CHILD_SEARCHED_LOCATION);
+            restaurantRef.push().setValue(mRestaurant);
+            Toast.makeText(getContext(), "Saved", Toast.LENGTH_LONG).show();
+
         }
     }
 }
