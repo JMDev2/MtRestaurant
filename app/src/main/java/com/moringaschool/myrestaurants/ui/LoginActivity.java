@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.moringaschool.myrestaurants.R;
 
@@ -19,8 +20,7 @@ import butterknife.ButterKnife;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.registerTextView) TextView mRegisterTextView; //member variable
     @BindView(R.id.passwordLoginButton) Button mLoginButton;
-    @BindView(R.id.emailEditText)
-    EditText mEmail;
+    @BindView(R.id.emailEditText) EditText mEmail;
     @BindView(R.id.passwordEditText) EditText mPassword;
 
     private FirebaseAuth mAuth;
@@ -32,6 +32,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ButterKnife.bind(this);
         mRegisterTextView.setOnClickListener(this); //Listens to the onClick method
 
+
+        FirebaseApp.initializeApp(this); //Important
         mAuth = FirebaseAuth.getInstance();
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {

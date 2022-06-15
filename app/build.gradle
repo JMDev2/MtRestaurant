@@ -18,6 +18,15 @@ android {
         buildTypes.each {
             it.buildConfigField 'String', 'YELP_API_KEY', YelpApiKey
         }
+
+
+    }
+//added
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            animationsDisabled = true
+        }
     }
 
     buildTypes {
@@ -67,4 +76,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.firebaseui:firebase-ui-database'
     implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
+
+//Robolectric dependencies
+    testImplementation 'org.robolectric:robolectric:4.8.1'
+
 }
