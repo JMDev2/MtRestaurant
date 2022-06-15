@@ -52,13 +52,17 @@ public class FirebaseRestaurantListAdapter extends FirebaseRecyclerAdapter<Busin
         return new FirebaseRestaurantViewHolder(view);
     }
 
+
+    //Accessing Firebase after Gesture Interactions
     @Override
     public boolean onItemMove(int fromPosition, int toPosition) {
+        notifyItemMoved(fromPosition, toPosition); //We call the notifyItemMoved() method to notify our adapter that the underlying data has changed.
         return false;
     }
 
     @Override
     public void onItemDismiss(int position) {
+        getRef(position).removeValue();
 
     }
 }
