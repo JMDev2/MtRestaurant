@@ -9,11 +9,11 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/restaurantImageView"
             android:layout_width="130dp"
             android:layout_height="100dp"
-            android:id="@+id/restaurantImageView"
-            android:src="@drawable/waffles"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/waffles" />
 
         <ImageView
             android:id="@+id/dragIcon"
@@ -34,13 +34,13 @@
         android:padding="10dp">
 
         <TextView
+            android:id="@+id/restaurantNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/restaurantNameTextView"
-            android:textSize="20dp"
-            android:textStyle="bold"
             android:text="Restaurant Name"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"

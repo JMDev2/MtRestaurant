@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "990766038090",
+    "firebase_url": "https://myrestaurants-60cea-default-rtdb.firebaseio.com",
     "project_id": "myrestaurants-60cea",
     "storage_bucket": "myrestaurants-60cea.appspot.com"
   },

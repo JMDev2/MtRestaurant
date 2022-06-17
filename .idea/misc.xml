@@ -9,12 +9,15 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_my_restaurants_array_adapter.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_restaurant_detail.xml" value="0.17222222222222222" />
-        <entry key="app/src/main/res/layout/activity_restaurants.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_restaurants.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_restaurants_activity1_instrumentation_test.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_saved_restaurant_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_restaurant_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_restaurant_list_for_orientation.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_saved_restaurant_list.xml" value="0.18" />
         <entry key="app/src/main/res/layout/menu_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/restaurant_list_item.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/restaurant_list_item_drag.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/restaurant_list_item_drag.xml" value="0.18" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_search.xml" value="0.25" />
       </map>
