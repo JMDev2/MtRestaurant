@@ -8,16 +8,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import android.widget.SearchView;
-import android.widget.TextView;
 
 import com.moringaschool.myrestaurants.Constants;
 import com.moringaschool.myrestaurants.R;
@@ -37,7 +34,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class RestaurantListFragmentForOrientation extends Fragment {
+public class RestaurantListFragment extends Fragment {
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
 //    @BindView(R.id.errorTextView) TextView mErrorTextView;
 //    @BindView(R.id.progressBar) ProgressBar mProgressBar;
@@ -50,7 +47,7 @@ public class RestaurantListFragmentForOrientation extends Fragment {
 
     public List<Business> restaurants = new ArrayList<>();
 
-    public RestaurantListFragmentForOrientation() {
+    public RestaurantListFragment() {
         // Required empty public constructor
     }
 
@@ -70,7 +67,7 @@ public class RestaurantListFragmentForOrientation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_restaurant_list_for_orientation, container, false);
+        View view = inflater.inflate(R.layout.fragment_restaurant_list, container, false);
         ButterKnife.bind(this, view);
 
         mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);

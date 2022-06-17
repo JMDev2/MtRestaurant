@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/fragmentRestaurantList"
-        android:name="com.moringaschool.myrestaurants.ui.RestaurantListFragmentForOrientation"
+        android:name="com.moringaschool.myrestaurants.ui.RestaurantListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_restaurant_list_for_orientation" />
+        tools:layout="@layout/fragment_restaurant_list" />
 
 </RelativeLayout>

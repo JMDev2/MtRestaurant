@@ -12,6 +12,7 @@ import com.moringaschool.myrestaurants.models.Business;
 
 import org.parceler.Parcels;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -21,7 +22,7 @@ public class RestaurantDetailActivity extends AppCompatActivity {
     @BindView(R.id.viewPager)
     ViewPager mViewPager;
     private RestaurantPagerAdapter adapterViewPager;
-    List<Business> mRestaurants;
+    private ArrayList<Business> mRestaurants = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

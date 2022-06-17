@@ -10,6 +10,6 @@
         android:name="com.moringaschool.myrestaurants.ui.SavedRestaurantListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_restaurant_list_for_orientation" />
+        tools:layout="@layout/fragment_restaurant_list" />
 
 </RelativeLayout>
